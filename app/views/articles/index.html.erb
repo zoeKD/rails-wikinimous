@@ -1,0 +1,6 @@
+<div class="list-articles">
+  <% @articles.each do |article| %>
+    <h2><%= link_to article.title, article_path(article) %></h2>
+    <p><%= article.content.slice(2, 100) %></p>
+  <% end %>
+</div>
